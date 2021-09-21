@@ -1,7 +1,7 @@
 if (window.location.href.indexOf("destinationService=") > -1) {
     destinationService = window.location.href.split("destinationService=")[1].split("&")[0];
     $("input[value='" + destinationService + "']").prop("checked", true);
-    
+
     console.log("Destination service founded in hash: " + destinationService);
 }
 
@@ -18,7 +18,7 @@ function convert() {
         originalLink = "https://mpro.maps.yandex.ru/?ll=32.064450%2C49.441349&z=20&l=mp%23sat&branch=0&activity=editor";
     }
 
-    status = "ok";
+    let status = "ok";
 
     if (originalLink.length == 0) {
         status = "the original link is empty";
@@ -74,7 +74,7 @@ function convert() {
         } else if (coord.includes("m")) {
             coord = coord.split("m");
             destinationCoordZ = coord[0];
-            
+
             if ((destinationCoordZ >= 30) && (destinationCoordZ <= 55)) {
                 destinationCoordZ = 20;
             } else if (destinationCoordZ <= 100) {
@@ -93,7 +93,7 @@ function convert() {
         } else {
             destinationCoordZ = 17;
         }
-        
+
         destinationCoordZ = String(destinationCoordZ).split('.')[0]
     } else if (originalLink.includes("wego.here")) {
         coord = originalLink.split("?map=");

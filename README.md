@@ -1,12 +1,12 @@
-# [Map Router WEB](https://vchkhr.github.io/map-router-web)
-With Map Router WEB you can easily switch from one map service to another.
+# [MAPPY WEB](https://vchkhr.github.io/mappy-web)
+With MAPPY WEB you can easily switch from one map service to another.
 
-![Map Router Demo](https://raw.githubusercontent.com/vchkhr/map-router-web/main/img/demo.png)
+![MAPPY Demo](https://raw.githubusercontent.com/vchkhr/mappy-web/main/img/demo.png)
 
 Easily check driving directions, road surfaces and building types from one service to another.
 
 ## How to Try
-Just open [vchkhr.github.io/map-router-web](https://vchkhr.github.io/map-router-web).
+Just open [vchkhr.github.io/mappy-web](https://vchkhr.github.io/mappy-web).
 
 ## How to Use
 Select one of the [supported services](#supported-services) and paste the original link. The page with destination service will open automatically. The service, which you selected as destination, will be remembered for next visit in URL.
@@ -24,5 +24,5 @@ Where can you go from and to:
 * 2ГИС
 
 ## Feedback and Donations
-Feedback is always welcome at [GitHub Issues](https://github.com/vchkhr/map-router-web/issues).\
+Feedback is always welcome at [GitHub Issues](https://github.com/vchkhr/mappy-web/issues).\
 You can donate to this project using [Patreon](https://patreon.com/vchkhr).

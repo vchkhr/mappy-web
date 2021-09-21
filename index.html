@@ -4,26 +4,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Map Router WEB</title>
-    <meta name="description" content="With Map Router WEB you can easily switch from one map service to another.">
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/logo.png">
+    <title>MAPPY WEB</title>
+    <meta name="description" content="With MAPPY WEB you can easily switch from one map service to another.">
 
-    <meta property="og:title" content="Map Router WEB">
-    <meta property="og:description"
-        content="With Map Router WEB you can easily switch from one map service to another.">
-    <meta property="og:url" content="https://vchkhr.github.io/map-router-web/">
+    <meta property="og:title" content="MAPPY WEB">
+    <meta property="og:description" content="With MAPPY WEB you can easily switch from one map service to another.">
+    <meta property="og:url" content="https://vchkhr.github.io/mappy-web/">
     <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Map Router WEB">
+    <meta property="og:site_name" content="MAPPY WEB">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://vchkhr.github.io/map-router-web/img/banner.png">
+    <meta property="og:image" content="https://vchkhr.github.io/mappy-web/img/logo.png">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Map Router WEB">
+    <meta property="og:image:width" content="100">
+    <meta property="og:image:height" content="100">
+    <meta property="og:image:alt" content="MAPPY WEB">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -43,7 +46,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1 class="center"><img src="img/logo.png" class="hem"> Map Router WEB</h1>
+                        <h1 class="center"><img src="img/logo.png" class="hem"> MAPPY WEB</h1>
                     </div>
                 </div>
             </div>
@@ -58,61 +61,44 @@
                         <h3 class="mt50">1. Select destination service</h3>
                         <p class="mt25">
                         <form id="destinationService">
-                            <input type="radio" name="destinationService" value="GoogleMaps" id="GoogleMaps"
-                                onclick="convert()" checked>
-                            <label for="GoogleMaps"><img src="img/services/GoogleMaps.png" class="serviceIcon"
-                                    title="Google Maps Satellite"></label>
+                            <input type="radio" name="destinationService" value="GoogleMaps" id="GoogleMaps" onclick="convert()" checked>
+                            <label for="GoogleMaps"><img src="img/services/GoogleMaps.png" class="serviceIcon" title="Google Maps Satellite"></label>
                             &ensp;
-                            <input type="radio" name="destinationService" value="GoogleStreetView" id="GoogleStreetView"
-                                onclick="convert()">
-                            <label for="GoogleStreetView"><img src="img/services/GoogleStreetView.png"
-                                    class="serviceIcon" title="Google Street View"></label>
+                            <input type="radio" name="destinationService" value="GoogleStreetView" id="GoogleStreetView" onclick="convert()">
+                            <label for="GoogleStreetView"><img src="img/services/GoogleStreetView.png" class="serviceIcon" title="Google Street View"></label>
                             &ensp;
-                            <input type="radio" name="destinationService" value="HEREWeGo" id="HEREWeGo"
-                                onclick="convert()">
-                            <label for="HEREWeGo"><img src="img/services/HEREWeGo.png" class="serviceIcon"
-                                    title="HERE WeGo"></label>
+                            <input type="radio" name="destinationService" value="HEREWeGo" id="HEREWeGo" onclick="convert()">
+                            <label for="HEREWeGo"><img src="img/services/HEREWeGo.png" class="serviceIcon" title="HERE WeGo"></label>
                             &ensp;
-                            <input type="radio" name="destinationService" value="HEREMapCreator" id="HEREMapCreator"
-                                onclick="convert()">
-                            <label for="HEREMapCreator"><img src="img/services/HEREMapCreator.png" class="serviceIcon"
-                                    title="HERE Map Creator"></label>
+                            <input type="radio" name="destinationService" value="HEREMapCreator" id="HEREMapCreator" onclick="convert()">
+                            <label for="HEREMapCreator"><img src="img/services/HEREMapCreator.png" class="serviceIcon" title="HERE Map Creator"></label>
                             &ensp;
-                            <input type="radio" name="destinationService" value="YandexKarty" id="YandexKarty"
-                                onclick="convert()">
-                            <label for="YandexKarty"><img src="img/services/YandexKarty.png" class="serviceIcon"
-                                    title="Яндекс.Карты"></label>
+                            <input type="radio" name="destinationService" value="YandexKarty" id="YandexKarty" onclick="convert()">
+                            <label for="YandexKarty"><img src="img/services/YandexKarty.png" class="serviceIcon" title="Яндекс.Карты"></label>
                             &ensp;
-                            <input type="radio" name="destinationService" value="YandexNarodnaiaKarta"
-                                id="YandexNarodnaiaKarta" onclick="convert()">
-                            <label for="YandexNarodnaiaKarta"><img src="img/services/YandexNarodnaiaKarta.png"
-                                    class="serviceIcon" title="Яндекс.Народная карта"></label>
+                            <input type="radio" name="destinationService" value="YandexNarodnaiaKarta" id="YandexNarodnaiaKarta" onclick="convert()">
+                            <label for="YandexNarodnaiaKarta"><img src="img/services/YandexNarodnaiaKarta.png" class="serviceIcon" title="Яндекс.Народная карта"></label>
                             &ensp;
-                            <input type="radio" name="destinationService" value="YandexYedinaiaKarta"
-                                id="YandexYedinaiaKarta" onclick="convert()">
-                            <label for="YandexYedinaiaKarta"><img src="img/services/YandexYedinaiaKarta.png"
-                                    class="serviceIcon" title="Яндекс.Единая Карта"></label>
+                            <input type="radio" name="destinationService" value="YandexYedinaiaKarta" id="YandexYedinaiaKarta" onclick="convert()">
+                            <label for="YandexYedinaiaKarta"><img src="img/services/YandexYedinaiaKarta.png" class="serviceIcon" title="Яндекс.Единая Карта"></label>
                             &ensp;
-                            <input type="radio" name="destinationService" value="Mapillary" id="Mapillary"
-                                onclick="convert()">
-                            <label for="Mapillary"><img src="img/services/Mapillary.png" class="serviceIcon"
-                                    title="Mapillary"></label>
+                            <input type="radio" name="destinationService" value="Mapillary" id="Mapillary" onclick="convert()">
+                            <label for="Mapillary"><img src="img/services/Mapillary.png" class="serviceIcon" title="Mapillary"></label>
                             &ensp;
-                            <input type="radio" name="destinationService" value="TwoGis" id="TwoGis"
-                                onclick="convert()">
-                            <label for="TwoGis"><img src="img/services/TwoGis.png" class="serviceIcon"
-                                    title="2GIS"></label>
+                            <input type="radio" name="destinationService" value="TwoGis" id="TwoGis" onclick="convert()">
+                            <label for="TwoGis"><img src="img/services/TwoGis.png" class="serviceIcon" title="2GIS"></label>
                         </form>
                         </p>
 
                         <h3 class="mt25">2. Enter original link</h3>
                         <div class="input-group mb-3 mt25">
-                            <input type="url" class="form-control" aria-label="Original link" oninput="convert()"
-                                id="originalLink" autofocus>
+                            <input type="url" class="form-control" aria-label="Original link" oninput="convert()" id="originalLink" autofocus>
                         </div>
 
+                        <p class="center text-muted">Make sure your browser doesn't block pop-ups.</p>
+
                         <p class="center mt50 gray">
-                            <a href="https://github.com/vchkhr/map-router#map-router">Map Router directly in browser &gt;</a>
+                            <a href="https://github.com/vchkhr/mappy#mappy">MAPPY directly in browser &gt;</a>
                         </p>
                     </div>
                 </div>
@@ -126,8 +112,7 @@
                 <div class="row">
                     <div class="col">
                         <p class="center text-secondary">
-                            <a href="https://github.com/vchkhr/map-router-web/issues">Feedback</a> <span
-                                class="text-black-50">&bull;</span> <a href="https://patreon.com/vchkhr">Donate</a>
+                            <a href="https://github.com/vchkhr/mappy-web/issues">Feedback</a> <span class="text-black-50">&bull;</span> <a href="https://patreon.com/vchkhr">Donate</a>
                         </p>
                     </div>
                 </div>
@@ -135,12 +120,8 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
     <script src="js/main.js"></script>
 </body>
