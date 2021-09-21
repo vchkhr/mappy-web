@@ -18,11 +18,12 @@
     margin-top: 50px;
 }
 
-header, article, footer {
-    margin-top: 25px; margin-bottom: 25px;
+body {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-footer p {
+div.info p {
     font-size: 80%;
 }
 
@@ -31,4 +32,24 @@ input#originalLink {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light dark;
+    }
+      
+    body {
+        color: #eee;
+        background: #222222;
+    }
+
+    input {
+        color: white !important;
+        background-color: #505050 !important;
+    }
+
+    .text-black-50 {
+        color: #474747 !important;
+    }
 }
