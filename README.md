@@ -1,7 +1,7 @@
-# [MAPPY WEB](https://vchkhr.github.io/mappy-web)
-With MAPPY WEB you can easily switch from one map service to another.
+# [Mappy WEB](https://vchkhr.github.io/mappy-web)
+With Mappy WEB you can easily switch from one map service to another.
 
-![MAPPY Demo](https://raw.githubusercontent.com/vchkhr/mappy-web/main/img/demo.png)
+![Mappy Demo](https://raw.githubusercontent.com/vchkhr/mappy-web/main/img/demo.png)
 
 Easily check driving directions, road surfaces and building types from one service to another.
 
