@@ -1,3 +1,10 @@
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+if (prefersDarkScheme.matches) {
+    let metaThemeColor = document.querySelector("meta[name=theme-color]");
+    metaThemeColor.setAttribute("content", "#222222");
+}
+
 if (window.location.href.indexOf("destinationService=") > -1) {
     destinationService = window.location.href.split("destinationService=")[1].split("&")[0];
     $("input[value='" + destinationService + "']").prop("checked", true);
