@@ -1,5 +1,5 @@
 # [Mappy WEB](https://vchkhr.github.io/mappy-web)
-With Mappy WEB you can easily switch from one map service to another.
+With Mappy WEB you can easily switch from one map service to another
 
 ![Mappy Demo](https://raw.githubusercontent.com/vchkhr/mappy-web/main/img/demo.png)
 
